@@ -1,7 +1,8 @@
 <?php
     require_once 'pdo.php';
-    $product = new Product(null, null, null);
+    $cate = new Category();
     $id = ['id' => $_POST['id']];
-    $product->deleteProdData($id);
-    header("Location: http://localhost/learn_php/BTVN11/product/index.php");
+    $cate->deleteData($id);
+    header("Location: http://localhost/learn_php/BTVN11/category/index.php");
+?>
 ?>
